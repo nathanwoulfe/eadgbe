@@ -1,21 +1,32 @@
-﻿
-
-<div class="curated">
-
-<h1>EADG.Be</h1>
-<h2>Guitar videos. Nothing else.</h2>
-    <div class="frame-wrapper hidden">
-        <div class="frame-wrapper-inner">
-            <iframe src="#" id="video" type='text/html' frameborder='0'></iframe>
+﻿<ul class="video-ul major">
+    <li ng-repeat="v in d track by $index" ng-if="$index===0">
+        <div class="inner-wrap" ng-click="showVideo(v.link[0].href)">
+            <a><img ng-src="{{v.link[0].href|youtubeImgFromUrl}}" /></a>
+            <h3>{{v.title.$t}}</h3>            
         </div>
-    </div>
-    <ul class="video-ul">
-        <li ng-repeat="v in d track by $index">
-            <div class="inner-wrap" ng-click="showVideo(v.link[0]._href)">
-                <a ><img ng-src="{{v.link[0]._href|youtubeImgFromUrl}}" /></a>
-                <h3>{{v.title.__text}}</h3>
-                <!--span class="attrib">{{v.author.name|attr}}</span-->                
-            </div>
-        </li>
-    </ul>
+    </li>
+</ul>
+
+<div class="ad-wrapper">
+    <!-- responsive - eadgbe -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-5334693872206093"
+         data-ad-slot="8909722560"
+         data-ad-format="auto"></ins>
+
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </div>
+<ul class="video-ul minor">
+    <li ng-repeat="v in d track by $index" ng-if="$index>0">
+        <div class="inner-wrap" ng-click="showVideo(v.link[0].href)">
+            <a><img ng-src="{{v.link[0].href|youtubeImgFromUrl}}" /></a>
+            <h3>{{v.title.$t}}</h3>            
+        </div>
+    </li>
+</ul>
+
+<!--a ng-click="more()" class="more-link">MORE</a-->
+

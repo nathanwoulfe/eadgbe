@@ -1,0 +1,364 @@
+/* app css stylesheet */
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/opensans_light_macroman/OpenSans-Light-webfont.eot');
+    src: url('fonts/opensans_light_macroman/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/opensans_light_macroman/OpenSans-Light-webfont.woff') format('woff'),
+         url('fonts/opensans_light_macroman/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('fonts/opensans_light_macroman/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'chunkfiveroman';
+    src: url('fonts/chunkfive/chunkfive-webfont.eot');
+    src: url('fonts/chunkfive/chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/chunkfive/chunkfive-webfont.woff') format('woff'),
+         url('fonts/chunkfive/chunkfive-webfont.ttf') format('truetype'),
+         url('fonts/chunkfive/chunkfive-webfont.svg#chunkfiveroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ 
+body, html
+{
+    padding: 0;
+    font-size: 24px;
+    margin:0;
+}
+
+body *
+{
+    font-family: 'open_sanslight' , sans-serif;
+}
+
+.hidden, .bio-content
+{
+    display: none;
+}
+
+h1,h2,h3,h4,h5,h6 
+{
+
+}
+h1
+{
+    font-weight: lighter;
+    font-size: 75px;
+    margin: 10px 0;
+}
+
+
+.wrapper
+{
+    padding: 2%;
+}
+
+
+.search-wrapper
+{
+    width: 100%;
+    display: inline-block;
+}
+
+.search-wrapper label
+{
+    font-size: 30px;
+    float: left;
+    display: block;
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
+.search-wrapper input
+{
+    height: 30px;
+    width: 50%;
+    max-width: 300px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+
+.block-ul, .video-ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.block-ul li, div:not(.curated) .video-ul li
+{
+    display: inline-block;
+}
+
+.block-ul li a
+{
+    padding: 8px;
+    display: block;
+    background: red;
+    margin: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.video-ul li
+{
+    width: 30.33333333%;
+    margin: 1.5%;
+    text-align:center;
+}
+
+.curated .video-ul 
+{
+    max-width:1500px;   
+    margin:25px auto;
+    }
+.curated .video-ul li 
+{
+    float:left;
+    padding-bottom:14px;
+    position:relative;
+}
+
+.video-ul li a
+{
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.video-ul li img
+{
+width: 100%;
+max-width: 350px;
+margin: -9.5% 0 -11.5%;
+}
+
+.bio:first-of-type:first-letter
+{
+    float: left;
+    color: red;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.expand
+{
+    text-align: center;
+    padding: 4px;
+    width: 50%;
+    margin: 0 auto;
+    background: red;
+    color: #fff;
+    cursor:pointer;
+}
+
+/* curated */
+
+.wrapper 
+{
+    padding-top:0
+}
+
+h1, h2 
+{
+    text-align:center;
+    margin:0;
+        font-family:'chunkfiveroman', sans-serif;
+    color:#444;
+}
+
+h1 
+{
+    font-size:150px;
+}
+h2 
+{
+    font-size:50px;
+    margin-top:-30px;
+    color:#666
+}
+
+.curated h3
+{
+    font-weight:normal;
+    color:#333;
+margin: 0.5em 0 0;
+overflow: hidden;
+line-height: 1.5em;
+padding:5px;
+position: absolute;
+font-size: 17px;
+bottom: 0;
+max-width: 350px;
+background: #ccc;
+opacity: .8;
+width: 100%;
+cursor:pointer;
+
+}
+
+    .curated li:first-child h3 
+    {
+        margin: 0.5em 0 0;
+    overflow: hidden;
+    line-height: 1.5em;
+    position: relative;
+    font-size: 24px;
+    opacity:1;
+    background:transparent;
+    max-width:100%;
+    }
+.curated .attrib 
+{
+    margin:0;
+    text-align:right;
+    font-size:14px;
+
+}
+
+
+.video-ul li:first-child 
+{
+    width:100%;
+    height:auto;
+    margin:0;
+}
+
+.video-ul li:first-child .inner-wrap 
+{
+    width:80%;
+    max-width:480px;
+    margin:0 auto;
+    padding-top:25px;
+}
+
+.video-ul li:first-child img 
+{
+    width:auto;
+    height:auto;
+    max-width:480px;
+    margin:-9.3% 0 -10.8% 0;
+}
+
+
+
+.curated .inner-wrap 
+{
+    max-width:350px;
+    margin:0 auto;
+    position:relative;
+}
+
+
+.frame-wrapper {
+    width: 80%;
+    max-width:720px;
+}
+
+    .frame-wrapper-inner 
+    {    
+        position: relative;
+        padding-bottom: 50.5%;
+        padding-top: 25px;
+        height: 0;
+    }
+    
+    .frame-wrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+    
+/** responsive **/
+
+@media screen and (max-width:767px) 
+{
+    
+
+        .curated h1 
+    {
+        font-size:70px;
+    }
+    .curated h2 
+    {
+        font-size:30px;
+        margin-top:-15px;
+    }    
+    
+    .video-ul li
+    {
+        width: 47%;
+        margin: 1.5%;
+        text-align:center;
+    }
+
+    .curated .video-ul 
+    {
+        max-width:100%;   
+        margin:25px auto;
+        }
+        
+.video-ul li:first-child img 
+{
+    width:100%;
+}        
+        
+}
+
+@media screen and (max-width:480px) 
+{
+    
+
+        .curated h2 
+    {
+        font-size:20px;
+    }    
+
+    
+    
+    .video-ul li
+    {
+        width: 80%;
+        margin: 20px 10%;
+        text-align:center;
+    }
+
+
+
+    .curated .video-ul 
+    {
+        max-width:100%;   
+        margin:25px auto;
+        }
+}
+
+@media screen and (max-width:320px) 
+{
+    .curated h1 
+    {
+        font-size:60px;
+    }
+    .curated h2 
+    {
+        font-size: 25px;
+        margin-top:-10px;
+    }
+}
