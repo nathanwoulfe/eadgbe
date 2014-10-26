@@ -45,15 +45,15 @@
     if ($minutesSinceUpdate < 180) {
 
         $config = array();
-        $config['appId'] = '594315730631901';
-        $config['secret'] = 'ba12962c5c7aab708b8a96ad9d034e60';
+        $config['appId'] = '[appId';
+        $config['secret'] = '[secret]';
         $config['fileUpload'] = false; // optional
         $fb = new Facebook($config);
     
         $title = $latest['title']['$t'];
 
         $params = array(
-            "access_token" => "CAAIchuoCPN0BAHdG88aZAABpwolAsyFHJuaKvjb0CtYY2UmX69hMDbdjPXrgtmFOgSEL2c5eFgPcfnz4nd5RI8CyU9V2H50SpGzT4KpfPL6GG5tXZANzQOiZCflJZAhVILINow7DiqI39maLBgzXU7AbbpYzPaamwKEwskX8o7pFbMZBAqQ7v",
+            "access_token" => "[token]",
             "message" => "NEW VIDEO: " . $title . " 
             " . $messageSuffix . "
             " . "
@@ -73,10 +73,10 @@
         // twitter time...
 
         $settings = array(
-            'oauth_access_token' => "2176654932-5oxttJbSzmg85AImU1mPndb86p2YONrPJZmmm1K",
-            'oauth_access_token_secret' => "zW0QIAHPX6ZXjmag526aJ5DHlzf5Y4w4NJ02am1YHAs3w",
-            'consumer_key' => "3cUgolrdOPCUUhd09OSxhg",
-            'consumer_secret' => "BLfKO0BBYt3G723tTj1XEkiZmiUgeAOqh1RcmK93ZE"
+            'oauth_access_token' => "[token]",
+            'oauth_access_token_secret' => "[secret]",
+            'consumer_key' => "[key]",
+            'consumer_secret' => "[consumer_secret]"
         );
 
         $url = 'https://api.twitter.com/1.1/statuses/update.json';
